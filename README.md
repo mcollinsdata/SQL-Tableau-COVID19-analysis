@@ -35,7 +35,7 @@ SQL queries:
 
 	FROM covid-data-project-345810.covid.deaths
 
--- Where statement required: there are continental groupings in the data, and this removes them so we don't have 'world' or 'asia' in the results. 
+	-- Where statement required: there are continental groupings in the data, and this removes them so we don't have 'world' or 'asia' in the results. 
 
 	WHERE continent IS NOT NULL
 
@@ -48,7 +48,7 @@ SQL queries:
 
 	FROM covid-data-project-345810.covid.deaths
 
--- Where statement required: there are continental groupings in the data, and this removes them so we don't have 'world' or 'asia' in the results. 
+	-- Where statement required: there are continental groupings in the data, and this removes them so we don't have 'world' or 'asia' in the results. 
 
 	WHERE continent IS NULL
 
@@ -56,9 +56,9 @@ SQL queries:
 
 	ORDER BY TotalDeathCount DESC;
 
--- Issue - North America doesn't seem to be including Canada when I did 'SELECT continent', but by location and then finding where continent is null did the trick. 
+	-- Issue - North America doesn't seem to be including Canada when I did 'SELECT continent', but by location and then finding where continent is null did the trick. 
 
--- This still has earning brackets in it though. These can easily be removed or separated when I export to visualise. 
+	-- This still has earning brackets in it though. These can easily be removed or separated when I export to visualise. 
 
 
 -- 5. Total death counts grouped and ordered by continent. 
@@ -67,7 +67,7 @@ SQL queries:
 
 	FROM covid-data-project-345810.covid.deaths
 
--- Where statement required: there are continental groupings in the data, and this removes them so we don't have 'world' or 'asia' in the results. 
+	-- Where statement required: there are continental groupings in the data, and this removes them so we don't have 'world' or 'asia' in the results. 
 
 	WHERE continent IS NOT NULL
 
@@ -82,7 +82,7 @@ SQL queries:
 
 	FROM covid-data-project-345810.covid.deaths
 
--- Where statement required: there are continental groupings in the data, and this removes them so we don't have 'world' or 'asia' in the results. 
+	-- Where statement required: there are continental groupings in the data, and this removes them so we don't have 'world' or 'asia' in the results. 
 
 	WHERE continent IS NOT NULL
 
